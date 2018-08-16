@@ -1,0 +1,26 @@
+[Unit]
+Description=ParadiseCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=ParadiseCoin
+Group=ParadiseCoin
+
+Type=forking
+PIDFile=/var/lib/ParadiseCoind/ParadiseCoind.pid
+
+ExecStart=/usr/bin/ParadiseCoind -daemon -pid=/var/lib/ParadiseCoind/ParadiseCoind.pid \
+          -conf=/etc/ParadiseCoin/ParadiseCoin.conf -datadir=/var/lib/ParadiseCoind
+
+ExecStop=-/usr/bin/ParadiseCoin-cli -conf=/etc/ParadiseCoin/ParadiseCoin.conf \
+         -datadir=/var/lib/ParadiseCoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

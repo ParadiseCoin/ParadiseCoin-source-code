@@ -1,0 +1,26 @@
+# /etc/conf.d/ParadiseCoind: config file for /etc/init.d/ParadiseCoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/ParadiseCoin/ParadiseCoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/ParadiseCoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ParadiseCoind.pid"
+
+# Where to write ParadiseCoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/ParadiseCoind"
+
+# User and group to own ParadiseCoind process
+#BITCOIND_USER="ParadiseCoin"
+#BITCOIND_GROUP="ParadiseCoin"
+
+# Path to ParadiseCoind executable
+#BITCOIND_BIN="/usr/bin/ParadiseCoind"
+
+# Nice value to run ParadiseCoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

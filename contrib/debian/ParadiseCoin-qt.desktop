@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ParadiseCoin
+Comment=ParadiseCoin P2P Cryptocurrency
+Comment[fr]=ParadiseCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ParadiseCoin, eşten eşe kriptografik sanal para birimi
+Exec=ParadiseCoin-qt %u
+Terminal=false
+Type=Application
+Icon=ParadiseCoin128
+MimeType=x-scheme-handler/ParadiseCoin;
+Categories=Office;Finance;
