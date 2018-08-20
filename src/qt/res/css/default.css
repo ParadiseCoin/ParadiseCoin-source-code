@@ -108,7 +108,7 @@ outline:0; /* Remove Annoying Focus Rectangle */
 }
 
 QGroupBox {
-background-color:#190000;
+background-color:#FFFFFF;
 color:#15BCC5;
 }
 
@@ -148,8 +148,8 @@ font-size:11px;
 min-height:25px;
 outline:0;
 padding:3px;
-background-color:#190000;
-color:#ffffff;
+background-color:#FFFFFF;
+color:#000000;
 }
 
 .QLineEdit:!focus {
@@ -191,9 +191,9 @@ border:1px solid #15BCC5;
 QComboBox { /* Dropdown Menus */
 border:1px solid #000000;
 padding: 3px 5px 3px 5px;
-background:#190000;
+background:#FFFFFF;
 min-height:25px;
-color:#EEEFF6;
+color:#000000;
 }
 
 QComboBox:checked {
@@ -201,7 +201,7 @@ background:#4c0000;
 }
 
 QComboBox:editable {
-background:#EEEFF6;
+background:#000000;
 color:#616161;
 border:0px solid transparent;
 }
@@ -220,7 +220,7 @@ background:#fff;
 border:1px solid #15BCC5;
 padding-right:1px;
 padding-left:1px;
-color:#EEEFF6;
+color:#000000;
 }
 
 QComboBox QAbstractItemView::item {
@@ -228,7 +228,7 @@ margin:4px;
 }
 
 QComboBox::item {
-color:#EEEFF6;
+color:#000000;
 }
 
 QComboBox::item:alternate {
@@ -250,16 +250,16 @@ selection-color:transparent;
 QAbstractSpinBox {
 border:1px solid #000000;
 padding: 3px 5px 3px 5px;
-background:#190000;
+background:#FFFFFF;
 min-height:25px;
-color:#EEEFF6;
+color:#000000;
 }
 
 QAbstractSpinBox::up-button {
 subcontrol-origin: border;
 subcontrol-position: top right;
 width:21px;
-background:#190000;
+background:#FFFFFF;
 border-left:0px;
 border-right:1px solid #000000;
 border-top:1px solid #000000;
@@ -277,7 +277,7 @@ QAbstractSpinBox::down-button {
 subcontrol-origin: border;
 subcontrol-position: bottom right;
 width:21px;
-background:#190000;
+background:#FFFFFF;
 border-top:0px;
 border-left:0px;
 border-right:1px solid #000000;
@@ -300,7 +300,7 @@ outline:0;
 
 QHeaderView::section { /* Table Header Sections */
 qproperty-alignment:center;
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #EEEFF6, stop: 1 #000000);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #000000, stop: 1 #000000);
 color:#fff;
 min-height:25px;
 font-weight:bold;
@@ -328,7 +328,7 @@ border:1px solid #15BCC5;
 }
 
 QTableView::item { /* Table Item */
-background-color:#190000;
+background-color:#FFFFFF;
 font-size:12px;
 }
 
@@ -338,7 +338,7 @@ color:#fff;
 }
 
 QTableWidget { /* Table Background */
-background-color:red; /*#190000;*/
+background-color:red; /*#FFFFFF;*/
 border:1px solid #15BCC5;
 }
 
@@ -348,7 +348,7 @@ background:transparent;
 }
 
 QTreeWidget { /* Tree Background */
-background-color:#190000;
+background-color:#FFFFFF;
 alternate-background-color:#4c0000;
 color:#15BCC5;
 }
@@ -807,7 +807,7 @@ min-width:180px;
 }
 
 QEnxlog#RPCConsole QWidget#tab_peers QLabel#peerHeading { /* Peers Info Header */
-color:#EEEFF6;
+color:#000000;
 }
 
 QEnxlog#RPCConsole QTableView#peerWidget::item { /* Peers Table Items */
@@ -820,7 +820,7 @@ max-width:60px;
 
 QEnxlog#RPCConsole QTextEdit#messagesWidget { /* Console Messages Window */
 border:0;
-background-color:#190000;
+background-color:#FFFFFF;
 color:#15BCC5;
 }
 
